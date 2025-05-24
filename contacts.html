@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nez Business Consulting - Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Specific styles for the contact page forms */
+        .form-container {
+            display: flex;
+            flex-direction: column; /* Stack form sections on smaller screens */
+            gap: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            max-width: 900px; /* Limit width of the form container */
+        }
+
+        .form-section {
+            background-color: #f9f9f9;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border: 1px solid #ddd;
+        }
+
+        .form-section h2 {
+            color: #0077b6; /* Blue heading */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-section label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .form-section input[type="text"],
+        .form-section input[type="tel"],
+        .form-section input[type="email"],
+        .form-section select,
+        .form-section textarea {
+            width: calc(100% - 16px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 1em;
+        }
+
+        .form-section select {
+            appearance: none; /* Remove default arrow for better styling */
+            background-image: url('data:image/svg+xml;utf8,<svg fill="currentColor" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>');
+            background-repeat: no-repeat;
+            background-position: right 10px top 50%;
+            background-size: 16px;
+        }
+
+        .form-section textarea {
+            resize: vertical; /* Allow vertical resizing */
+        }
+
+        .form-section input[type="submit"] {
+            background-color: #0077b6; /* Blue submit button */
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-section input[type="submit"]:hover {
+            background-color: #005691; /* Darker blue on hover */
+        }
+
+        .terms-section {
+            margin-top: 10px;
+            color: #555;
+        }
+
+        .terms-section input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .terms-section a {
+            color: #0077b6;
+            text-decoration: none;
+        }
+
+        .terms-section a:hover {
+            text-decoration: underline;
+        }
+
+        .section-number {
+            background-color: #0077b6; /* Blue section number */
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .enquiry-form {
+            background-color: #e0f7fa; /* Light cyan for enquiry form */
+            border: 1px solid #b2ebf2;
+        }
+
+        .enquiry-form h2 {
+            color: #26a69a; /* Teal heading for enquiry */
+        }
+
+        .enquiry-form .section-number {
+            background-color: #26a69a; /* Teal section number */
+        }
+
+        /* Mobile Styles (applied by default) */
+        .img {
+            margin-left: 0; /* Adjust image margin for mobile */
+            max-width: 100%; /* Make image responsive */
+            height: auto;
+            display: block;
+            margin-top: 20px;
+        }
+
+        .intro-text {
+            margin-left: 0; /* Adjust intro text margin for mobile */
+            padding: 20px;
+            text-align: center;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        /* Desktop Styles (applied for screens wider than 768px) */
+        @media (min-width: 769px) {
+            .form-container {
+                flex-direction: row; /* Arrange form sections horizontally on larger screens */
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+
+            .form-section {
+                width: calc(50% - 15px); /* Two columns with some gap */
+            }
+
+            .img {
+                margin-left: 270px; /* Adjust image margin for desktop with sidebar */
+                max-width: 40%; /* Adjust image size on desktop */
+                float: right;
+                margin-top: 0;
+            }
+
+            .intro-text {
+                margin-left: 270px; /* Adjust intro text margin for desktop with sidebar */
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 style="font-family: 'Times New Roman', Times, serif;">Contact Us</h1>
+        <nav class="header-links">
+            <ol>
+                <li><a href="home.html">Home</a></li>
+                <li>|</li>
+                <li><a href="services.html">Services</a></li>
+                <li>|</li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li>|</li>
+                <li><a href="casestudy.html">Case Study</a></li>
+                <li><a href="terms.html">Terms and Conditions</a></li>
+                <li>|</li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <div class="hamburger-btn" id="hamburger-btn">
+        &#9776;
+    </div>
+
+    <div class="main-content">
+    <p class="intro-text">
+        Simply fill in some details below and a <a href="#">Nez Consulting</a> representative will be in contact with you shortly.
+    </p>
+    <img src="images/thumbsUp.jpg" alt="" class="img">
+    <div class="form-container">
+
+        <div class="form-section">
+            <div class="section-number">1</div>
+            <h2>Provide Your Details</h2>
+            <form id="details-form">
+                <label for="first_name">First Name</label>
+                <input type="text" id="first_name" name="first_name"><br>
+
+                <label for="last_name">Last Name</label>
+                <input type="text" id="last_name" name="last_name"><br>
+
+                <label for="contact_method">Select contact method</label>
+                <select id="contact_method" name="contact_method">
+                    <option value="">-Select contact method-</option>
+                    <option value="phone">Phone</option>
+                    <option value="email">Email</option>
+                </select>
+                <br>
+
+                <div id="phoneDiv" style="display: none;">
+                    <label for="contact_value">Phone</label>
+                    <input type="tel" id="contact_value" name="contact_value">
+                </div>
+
+                <div id="emailDiv" style="display: none;">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+
+                <br>
+                <label for="country">Country:</label>
+                <select id="country" name="country">
+                    <option value="">--Select Country--</option>
+                    <option value="botswana">Botswana</option>
+                    <option value="south_africa">South Africa</option>
+                    <option value="namibia">Namibia</option>
+                    <option value="angola">Angola</option>
+                    <option value="zambia">Zambia</option>
+                </select>
+                <br>
+
+                <div class="terms-section">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the <a href="terms.html">Terms and Conditions</a></label>
+                </div>
+                <br>
+                <input type="submit" value="Submit Details">
+            </form>
+        </div>
+
+        <div class="form-section enquiry-form">
+            <div class="section-number">2</div>
+            <h2>Your Enquiry</h2>
+
+            <form id="inquiry-type-form">
+                <label for="inquiry_type">Choose Inquiry Type:</label>
+                <select id="inquiry_type" name="inquiry_type">
+                    <option value="">Select an option</option>
+                    <option value="business_strategy_consulting">Business Strategy Consulting</option>
+                    <option value="startup_development_assistance">Startup Development Assistance</option>
+                    <option value="marketing_and_branding">Marketing and Branding</option>
+                    <option value="financial_planning_and_analysis">Financial Planning and Analysis</option>
+                    <option value="hr_and_team_development">HR and Team Development</option>
+                    <option value="digital_transformation_&_tech_integration">Digital Transformation & Tech Integration</option>
+                    <option value="workshops_&_seminars">Workshops & Seminars</option>
+                    <option value="other">Other</option>
+                </select>
+            </form>
+
+            <form id="message-form" style="display: none;">
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+                <input type="submit" value="Submit Enquiry">
+            </form>
+        </div>
+    </div>
+    <script>
+        // Show/hide phone/email input based on selection
+        const contactMethodSelect = document.getElementById('contact_method');
+        const phoneDiv = document.getElementById('phoneDiv');
+        const emailDiv = document.getElementById('emailDiv');
+
+        contactMethodSelect.addEventListener('change', function () {
+            phoneDiv.style.display = 'none';
+            emailDiv.style.display = 'none';
+
+            if (this.value === 'phone') {
+                phoneDiv.style.display = 'block';
+            } else if (this.value === 'email') {
+                emailDiv.style.display = 'block';
+            }
+        });
+
+        // Validate details form before submission
+        document.getElementById('details-form').addEventListener('submit', function (event) {
+            const emailInput = document.getElementById('email');
+            const phoneInput = document.getElementById('contact_value');
+            const countrySelect = document.getElementById('country');
+            const termsCheckbox = document.getElementById('terms');
+
+            if (!contactMethodSelect.value) {
+                alert('Please select a contact method (Email or Phone).');
+                event.preventDefault();
+                return;
+            }
+
+            if (contactMethodSelect.value === 'email' && !emailInput.value.trim()) {
+                alert('Please enter your email.');
+                event.preventDefault();
+                return;
+            }
+
+            if (contactMethodSelect.value === 'phone' && !phoneInput.value.trim()) {
+                alert('Please enter your phone number.');
+                event.preventDefault();
+                return;
+            }
+
+            if (!countrySelect.value) {
+                alert('Please select a country.');
+                event.preventDefault();
+                return;
+            }
+
+            if (!termsCheckbox.checked) {
+                alert('Please agree to the terms and conditions.');
+                event.preventDefault();
+                return;
+            }
+        });
+
+        // Show/hide message form based on enquiry type
+        const inquiryTypeSelect = document.getElementById('inquiry_type');
+        const messageForm = document.getElementById('message-form');
+
+        inquiryTypeSelect.addEventListener('change', function () {
+            if (this.value) {
+                messageForm.style.display = 'block';
+            } else {
+                messageForm.style.display = 'none';
+            }
+        });
+    </script>
+    </div>
+</body>
+
+</html> 

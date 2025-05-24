@@ -1,0 +1,163 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8" />  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+    <title>Customer Testimonials | Nez Consulting</title>  
+    <style>  
+       /* New styles for testimonials with variable blue shades, circular images, etc. */  
+
+:root {  
+    --blue-shade1: #2e9be4;  
+    --blue-shade2: #22a0f5;  
+    --blue-shade3: #2471a3;  
+    --blue-shade4: #1f618d;  
+    --blue-shade5: #166085;  
+    --blue-shade6: #0e4c72;  
+  }  
+  
+  .testimonial {  
+    border-radius: 8px;  
+    padding: 30px 20px 50px 20px; /* extra bottom space for image container */  
+    margin-bottom: 30px;  
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);  
+    position: relative;  
+    overflow: hidden;  
+    color: #fff; /* default text color for contrast */  
+  }  
+  
+  /* Variants for shades, apply as needed */  
+  .testimonial.shade2 { background-color: var(--blue-shade2); }  
+  .testimonial.shade3 { background-color: var(--blue-shade3); }  
+  .testimonial.shade4 { background-color: var(--blue-shade4); }  
+  .testimonial.shade5 { background-color: var(--blue-shade5); }  
+  .testimonial.shade6 { background-color: var(--blue-shade6); }  
+  
+  h2 {  
+    font-size: 1.2em;  
+    margin-bottom: 15px;  
+    /* make header text visible against background */  
+    color: #fff;  
+  }  
+  
+  .testimonial p {  
+    font-size: 1em;  
+    /* ensure text is visible by default, override if needed */  
+    color: #fff;  
+    margin-bottom: 20px;  
+  }  
+  
+  /* Container for image + client info */  
+  .customer-info-container {  
+    display: flex;  
+    flex-direction: column; /* stack image on top of info */  
+    align-items: center; /* center horizontally */  
+    margin-top: 15px;  
+  }  
+  
+  /* Circular customer image */  
+  .customer-image {  
+    width: 80px;  
+    height: 80px;  
+    border-radius: 50%;  
+    object-fit: cover;  
+    border: 3px solid #fff; /* optional border */  
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);  
+    margin-bottom: 10px;  
+  }  
+  
+  /* Client info style */  
+  .client-info {  
+    font-style: italic;  
+    color: #ffe; /* bright, visible color */  
+    font-weight: bold;  
+    font-size: 1em;  
+    text-align: center;  
+  }  
+        @media(max-width: 768px){  
+            body {  
+                padding: 20px;  
+            }  
+        } 
+        
+    </style>  
+</head>  
+<body>
+    <!-- Header Section -->
+  <header>
+    <h2 class="mission-statement">Nez Consulting, Professionals with Professional Percept For Insight</h2>
+    <nav class="header-links">
+      <ol>
+        <li><a href="#">Home</a></li>
+        <li>|</li>
+        <li><a href="#">Services</a></li>
+        <li>|</li>
+        <li><a href="#">Testimonials</a></li>
+        <li>|</li>
+        <li><a href="#">Case Study</a></li>
+        <li><a href="terms.html">Terms and Conditions</a></li>
+        <li>|</li>
+        <li><a href="contact.html">Contact</a></li>
+      </ol>
+    </nav>
+  </header>
+  
+    <h1>What Our Clients Say</h1>  
+    
+    <div class="testimonial shade2">  
+        <h2>“Transforming Our Business with Data-Driven Insights”</h2>  
+        <p>  
+            "Nez Consulting has truly revolutionized the way we approach our daily operations and strategic planning. Before working with them, we relied heavily on intuition and guesswork, which often led to inconsistent results. From the moment we engaged their team, they took the time to understand our specific needs, challenges, and goals. The bespoke dashboard they developed gave us real-time insights into our sales, customer preferences, and operational bottlenecks. Since implementing their BI tools, our decision-making process has become more agile and informed. Within just three months, we saw a 25% increase in sales and a noticeable improvement in customer satisfaction.  
+            
+            The team's professionalism, patience, and dedication are unparalleled. They conducted comprehensive training sessions, ensuring our staff could independently interpret and utilize the data. We are now a more confident, data-driven organization, thanks to Nez Consulting."  
+        </p>  
+        <div class="customer-info-container">
+            <img src="images/sarah.webp" alt="Sarah Mogapi" class="customer-image" />   
+            <div class="client-info">— Sarah M., CEO of BrightTech Solutions, Kenya</div>  
+        </div>  
+    </div>  
+
+    <div class="testimonial shade3">  
+        <h2>“Supporting Our Growth in Challenging Markets”</h2>  
+        <p>  
+            "Our startup faced multiple hurdles—limited financing options, minimal formal business structures, and a lack of strategic direction. Partnering with Nez Consulting was a game-changer. They not only helped us formalize our business operations but also connected us with impact investors who believed in our vision. Their team took the time to understand our unique challenges and provided tailored solutions that fit our budget and goals.  
+
+            What truly stood out was their ongoing mentorship and capacity-building workshops. They empowered us with the knowledge to manage cash flow, develop marketing strategies, and plan for scale. Today, we have expanded from serving a few local clients to reaching regional markets, and we're now preparing for our first round of funding. Nez Consulting is more than a consultancy—they are true partners in our growth journey."  
+        </p>  
+        <div class="customer-info-container">
+            <img src="images/teboho.webp" alt="Sarah Mogapi" class="customer-image" />   
+            <div class="client-info">— Teboho D., Founder of GreenEnergy Africa, South Africa</div>  
+        </div>  
+    </div>  
+
+    <div class="testimonial shade4">  
+        <h2>“Revitalizing Our Brand and Increasing Customer Engagement”</h2>  
+        <p>  
+            "Our small artisanal food business was struggling to differentiate itself in a crowded market. We knew we had a great product, but we lacked the strategic branding to stand out. Nez Consulting's branding experts came highly recommended, and they exceeded our expectations.  
+
+            They spent time understanding our story, values, and target customer base. They helped us craft an authentic brand narrative and re-designed our logo, packaging, and digital presence. The results have been phenomenal. Our social media engagement doubled within two months, and our sales increased by 40% in that period. Customers now connect emotionally with our brand, and we’ve seen repeat business grow significantly.  
+
+            Thanks to Nez Consulting, we finally have a clear, compelling brand that captures who we are and what we stand for."  
+        </p>  
+        <div class="customer-info-container"> 
+            <img src="images/lindiwe.jpg" alt="Sarah Mogapi" class="customer-image" />  
+            <div class="client-info">— Lindiwe N., Owner of Spice & Savor, Zimbabwe</div>  
+        </div>  
+    </div>  
+
+    <div class="testimonial shade5">  
+        <h2>“Empowering Women Entrepreneurs for Sustainable Impact”</h2>  
+        <p>  
+            "As a woman leading a small manufacturing enterprise in Tanzania, I faced numerous barriers—limited access to finance, societal biases, and a lack of formal business training. Nez Consulting’s team dedicated significant time to understand our context and tailored their support accordingly. They provided leadership coaching, connected us with women-focused investors, and helped formalize our business to access new markets.  
+
+            Their mentorship enabled me to scale my operations and improve product quality, which opened opportunities for export. The confidence I gained through their capacity-building workshops transformed my approach to leadership, and I now serve as a role model in my community. The impact of their support goes beyond my business—it’s inspiring local women and helping uplift our entire community."  
+        </p>  
+        <div class="customer-info-container">
+            <img src="images/amina.avif" alt="Sarah Mogapi" class="customer-image" />    
+            <div class="client-info">— Amina K., Founder of Amina’s Crafts, Tanzania</div> 
+        </div>  
+    </div>  
+
+    <p style="text-align:center; font-size:1.2em; margin-top:40px;">Nez Consulting is committed to delivering customized solutions that turn challenges into opportunities. Our success stories are a testament to the transformative power of strategic support and innovative thinking. Join our growing list of satisfied clients and let us help you achieve your business goals.</p>  
+</body>  
+</html>  

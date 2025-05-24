@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nez Business Consulting - Our Team</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Styles specific to the Team Profiles page */
+        .content-wrapper {
+            margin-left: 270px; /* Space for the fixed sidebar */
+            padding: 20px;
+        }
+
+        .team-profiles-container {
+            padding: 20px;
+        }
+
+        .team-member-profile {
+            margin-bottom: 30px;
+            background-color: #f0f8ff; /* Light blue/aliceblue background */
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-member-profile h2 {
+            color: #0077b6; /* Blue */
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .team-member-profile .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 10px auto;
+            display: block;
+            border: 3px solid #0077b6;
+        }
+
+        .team-member-profile h3 {
+            color: #333;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+        .team-member-profile p.title {
+            color: #555;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .team-member-profile .expertise {
+            margin-bottom: 10px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .team-member-profile .experience {
+            color: #555;
+            font-style: italic;
+            line-height: 1.6;
+        }
+
+        .contact-team-button-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .contact-team-button {
+            display: inline-block;
+            background-color: #2e7d32; /* Green contact button */
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-team-button:hover {
+            background-color: #1b5e20; /* Darker green on hover */
+        }
+
+        /* Mobile Styles (applied by default) */
+        .team-member-profile {
+            text-align: center;
+        }
+
+        /* Desktop Styles (applied for screens wider than 768px) */
+        @media (min-width: 769px) {
+            .team-member-profile {
+                text-align: left;
+                display: flex;
+                align-items: center;
+                padding: 30px;
+            }
+
+            .team-member-profile .profile-image {
+                margin: 0 20px 0 0;
+            }
+
+            .team-member-profile .profile-details {
+                flex-grow: 1;
+            }
+
+            .team-member-profile h2,
+            .team-member-profile h3,
+            .team-member-profile p.title {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2 class="mission-statement">Nez Consulting, Professionals with Professional Percept For Insight</h2>
+        <nav class="header-links">
+            <ol>
+                <li><a href="home.html">Home</a></li>
+                <li>|</li>
+                <li><a href="services.html">Services</a></li>
+                <li>|</li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li>|</li>
+                <li><a href="casestudy.html">Case Study</a></li>
+                <li><a href="terms.html">Terms and Conditions</a></li>
+                <li>|</li>
+                <li><a href="contact.html">Contact</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <div class="hamburger-btn" id="hamburger-btn">
+        &#9776;
+    </div>
+
+    <div class="page-container">
+        <aside class="sidebar" id="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="casestudy.html">Case Study</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                    <li><a href="teamprofiles.html" class="active">Team Profiles</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about_us.html">About our business</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <div class="content-wrapper">
+            <main class="main-content team-profiles-container">
+                <h2>Meet Our Leadership Team</h2>
+
+                <div class="team-member-profile" id="team_member_1">
+                    <img src="images/alfred.webp" alt="Alfred Mogapi" class="profile-image">
+                    <div class="profile-details">
+                        <h2>Alfred Mogapi</h2>
+                        <h3 class="title">Founder & Chief Executive Officer</h3>
+                        <p class="expertise">Alfred is the visionary founder of Nez Business Consulting, with over 15 years of experience in strategic planning, business development, and financial management across diverse industries. His expertise lies in identifying growth opportunities, developing innovative solutions, and leading high-performing teams. He holds an MBA from [University Name] and has a proven track record of guiding businesses towards sustainable success.</p>
+                        <p class="experience">Prior to founding Nez Consulting, Alfred held senior leadership roles at [Previous Company 1] and [Previous Company 2], where he spearheaded significant expansion projects and implemented efficiency-enhancing strategies that resulted in substantial revenue growth and cost savings.</p>
+                    </div>
+                </div>
+
+                <div class="team-member-profile" id="team_member_2">
+                    <img src="images/team/thandi_nkosi.jpg" alt="Thandi Nkosi" class="profile-image">
+                    <div class="profile-details">
+                        <h2>Thandi Nkosi</h2>
+                        <h3 class="title">Director of Consulting Services</h3>
+                        <p class="expertise">Thandi leads our team of consultants, bringing over 10 years of experience in organizational development, process optimization, and change management. Her strengths include diagnosing complex business challenges, designing tailored interventions, and facilitating collaborative solutions that drive impactful change. She holds a Master's in Organizational Psychology from [University Name].</p>
+                        <p class="experience">Before joining Nez Consulting, Thandi worked as a senior consultant at [Previous Consulting Firm], where she managed multiple large-scale projects for clients in the [Industry] and [Industry] sectors, consistently exceeding client expectations.</p>
+                    </div>
+                </div>
+
+                <div class="team-member-profile" id="team_member_3">
+                    <img src="images/team/lerato_pule.jpg" alt="Lerato Pule" class="profile-image">
+                    <div class="profile-details">
+                        <h2>Lerato Pule</h2>
+                        <h3 class="title">Head of Strategy & Innovation</h3>
+                        <p class="expertise">Lerato is passionate about future-proofing businesses through strategic foresight and fostering a culture of innovation. With over 8 years of experience in market analysis, trend forecasting, and new venture development, she helps clients identify emerging opportunities and build resilient business models. She holds a degree in Strategic Management from [University Name].</p>
+                        <p class="experience">Prior to joining our team, Lerato was instrumental in launching several successful new product lines at [Previous Company], demonstrating a keen ability to translate market insights into actionable strategies.</p>
+                    </div>
+                </div>
+
+                <div class="team-member-profile" id="team_member_4">
+                    <img src="images/team/david_chen.jpg" alt="David Chen" class="profile-image">
+                    <div class="profile-details">
+                        <h2>David Chen</h2>
+                        <h3 class="title">Chief Financial Officer</h3>
+                        <p class="expertise">David brings over 12 years of experience in financial planning, analysis, and risk management. His expertise includes developing robust financial models, optimizing cash flow, and ensuring financial compliance. He is a certified [Relevant Financial Certification] and holds a Master's in Finance from [University Name].</p>
+                        <p class="experience">Before joining Nez Consulting, David served as a finance director at [Previous Company], where he successfully navigated complex financial landscapes and secured significant investment for growth initiatives.</p>
+                    </div>
+                </div>
+
+                <div class="team-member-profile" id="team_member_5">
+                    <img src="images/team/amina_ali.jpg" alt="Amina Ali" class="profile-image">
+                    <div class="profile-details">
+                        <h2>Amina Ali</h2>
+                        <h3 class="title">Director of Marketing & Communications</h3>
+                        <p class="expertise">Amina has over 9 years of experience in developing and executing impactful marketing and communication strategies. Her expertise spans brand building, digital marketing, and stakeholder engagement, driving increased visibility and customer acquisition. She holds a degree in Marketing from [University Name].</p>
+                        <p class="experience">Prior to joining Nez Consulting, Amina led successful marketing campaigns for [Previous Organization], resulting in significant brand awareness and lead generation.</p>
+                    </div>
+                </div>
+
+                <div class="team-member-profile" id="team_member_6">
+                    <img src="images/team/john_williams.jpg" alt="John Williams" class="profile-image">
+                    <div class="profile-details">
+                        <h2>John Williams</h2>
+                        <h3 class="title">Senior HR & Talent Development Consultant</h3>
+                        <p class="expertise">John has over 11 years of experience in human resources management, talent acquisition, and employee development. He specializes in creating effective HR strategies, building high-performing teams, and fostering positive organizational cultures. He holds a Master's in Human Resource Management from [University Name].</p>
+                        <p class="experience">Before joining us, John held HR leadership positions at [Previous Company], where he implemented successful talent management programs that improved employee retention and engagement.</p>
+                    </div>
+                </div>
+
+                <div class="team-member-profile" id="team_member_7">
+                    <img src="images/team/sara_jones.jpg" alt="Sara Jones" class="profile-image">
+                    <div class="profile-details">
+                        <h2>Sara Jones</h2>
+                        <h3 class="title">Lead Digital Transformation Consultant</h3>
+                        <p class="expertise">Sara has over 7 years of experience in guiding businesses through digital transformation initiatives. Her expertise includes identifying opportunities for technological integration, streamlining workflows, and implementing digital solutions that enhance efficiency and competitiveness. She holds a degree in Information Technology from [University Name].</p>
+                        <p class="experience">Prior to joining Nez Consulting, Sara led several successful digital transformation projects at [Previous Organization], resulting in significant operational improvements.</p>
+                    </div>
+                </div>
+
+                <div class="team-member-profile" id="team_member_8">
+                    <img src="images/team/kwame_adebayo.jpg" alt="Kwame Adebayo" class="profile-image">
+                    <div class="profile-details">
+                        <h2>Kwame Adebayo</h2>
+                        <h3 class="title">Strategy Advisor - African Markets</h3>
+                        <p class="expertise">Kwame brings over 14 years of experience in navigating the complexities of African markets, specializing in market entry strategies, cross-cultural business development, and stakeholder management. His deep understanding of the regional landscape provides invaluable insights for our clients expanding across the continent. He holds a Master's in International Business from [University Name].</p>
+                        <p class="experience">Before joining Nez Consulting, Kwame held key roles at [Previous Company] and [Previous Organization] focused on African market expansion, achieving significant success in establishing and growing business operations.</p>
+                    </div>
+                </div>
+
+                <div class="team-member-profile" id="team_member_9">
+                    <img src="images/team/priya_patel.jpg" alt="Priya Patel" class="profile-image">
+                    <div class="profile-details">
+                        <h2>Priya Patel</h2>
+                        <h3 class="title">Financial Planning & Analysis Manager</h3>
+                        <p class="expertise">Priya has over 6 years of experience in financial modeling, forecasting, and data analysis. Her expertise lies in providing clear financial insights that support strategic decision-making and drive business performance. She is a [Relevant Financial Certification] candidate and holds a degree in Finance from [University Name].</p>
+                        <p class="experience">Prior to joining Nez Consulting, Priya worked as a financial analyst at [Previous Company], where she played a key role in developing financial reports and providing strategic recommendations to senior management.</p>
+                    </div>
+                </div>
+
+                <div class="team-member-profile" id="team_member_10">
+                    <img src="images/team/ben_miller.jpg" alt="Ben Miller" class="profile-image">
+                    <div class="profile-details">
+                        <h2>Ben Miller</h2>
+                        <h3 class="title">Lead Workshop Facilitator & Trainer</h3>
+                        <p class="expertise">Ben has over 10 years of experience in designing and delivering engaging and impactful workshops and training programs. His expertise covers leadership development, team building, and business operations, helping clients enhance their skills and knowledge. He holds a certification in [Relevant Training Certification].</p>
+                        <p class="experience">Before joining Nez Consulting, Ben worked as a training manager at [Previous Organization], where he developed and delivered numerous successful training initiatives that resulted in measurable improvements in employee performance.</p>
+                    </div>
+                </div>
+
+                <div class="contact-team-button-container">
+                    <a href="contact.html" class="contact-team-button">Contact Our Team</a>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script>
+        const hamburgerBtn = document.getElementById("hamburger-btn");
+        const sidebar = document.getElementById("sidebar");
+
+        hamburgerBtn.addEventListener("click", function () {
+            sidebar.classList.toggle("show");
+        });
+
+        // Highlight active link
+        const sidebarLinks = document.querySelectorAll('.sidebar a');
+        sidebarLinks.forEach(link => {
+            if (link.href.includes("teamprofiles")) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>

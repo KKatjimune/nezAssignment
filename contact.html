@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nez Business Consulting - Contact us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      .img {
+        margin-left: 250px;
+      }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1 style="font-family: 'Times New Roman', Times, serif;">Contact Us</h1>
+        <nav class="header-links">
+            <ol>
+                <li><a href="home.html">Home</a></li>
+                <li>|</li>
+                <li><a href="#">Services</a></li>
+                <li>|</li>
+                <li><a href="#">Testimonials</a></li>
+                <li>|</li>
+                <li><a href="#">Case Study</a></li>
+                <li><a href="terms.html">Terms and Conditions</a></li>
+                <li>|</li>
+                <li><a href="contact.html">Contact</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <!-- Hamburger Button for Mobile -->
+    <div class="hamburger-btn" id="hamburger-btn">
+        &#9776; 
+    </div>
+
+    <!-- Sidebar Section -->
+    <aside class="sidebar" id="sidebar">
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="casestudy.html">Case Study</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="teamprofiles.html">Team Profiles</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about_us.html">About our business</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <div class="main-content">
+    <p class="intro-text">
+        Simply fill in some details below and a <a href="#">Nez Consulting</a> representative will be in contact with you shortly.
+    </p>
+    <img src="images/thumbsUp.jpg" alt="" style="margin-left: 250px;">
+    <div class="form-container">
+
+        <!-- Section 1: Provide Your Details -->
+        <div class="form-section">
+          <div class="section-number">1</div>
+          <h2>Provide Your Details</h2>
+          <form id="details-form">
+            <label for="first_name">First Name</label>
+            <input type="text" id="first_name" name="first_name"><br><br>
+      
+            <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" name="last_name"><br><br>
+      
+            <label for="contact_method">Select contact method</label>
+            <select id="contact_method" name="contact_method">
+              <option value="">-Select contact method-</option>
+              <option value="phone">Phone</option>
+              <option value="email">Email</option>
+            </select>
+            <br><br>
+      
+            <div id="phoneDiv" style="display: none;">
+              <label for="contact_value">Phone</label>
+              <input type="tel" id="contact_value" name="contact_value">
+            </div>
+      
+            <div id="emailDiv" style="display: none;">
+              <label for="email">Email</label>
+              <textarea id="email" name="email" rows="1" cols="50"></textarea>
+            </div>
+      
+            <br>
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+              <option value="">--Select Country--</option>
+              <option value="botswana">Botswana</option>
+              <option value="south_africa">South Africa</option>
+              <option value="namibia">Namibia</option>
+              <option value="angola">Angola</option>
+              <option value="zambia">Zambia</option>
+            </select>
+            <br><br>
+      
+            <div class="terms-section">
+              <input type="checkbox" id="terms" name="terms" required>
+              <label for="terms">I agree to the <a href="terms.html">Terms and Conditions</a></label>
+            </div>
+            <br>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      
+        <!-- Section 2: Your Enquiry -->
+        <div class="form-section enquiry-form">
+          <div class="section-number">2</div>
+          <h2>Your Enquiry</h2>
+      
+          <form id="inquiry-type-form">
+            <label for="inquiry_type">Choose Inquiry Type:</label>
+            <select id="inquiry_type" name="inquiry_type">
+              <option value="">Select an option</option>
+              <option value="business_strategy_consulting">Business Strategy Consulting</option>
+              <option value="startup_development_assistance">Startup Development Assistance</option>
+              <option value="marketing_and_branding">Marketing and Branding</option>
+              <option value="financial_planning_and_analysis">Financial Planning and Analysis</option>
+              <option value="hr_and_team_development">HR and Team Development</option>
+              <option value="digital_transformation_&_tech_integration">Digital Transformation & Tech Integration</option>
+              <option value="workshops_&_seminars">Workshops & Seminars</option>
+              <option value="other">Other</option>
+            </select>
+          </form>
+      
+          <form id="message-form" style="display: none;">
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+      <script>
+        // Show/hide phone/email input based on selection
+        const contactMethodSelect = document.getElementById('contact_method');
+        const phoneDiv = document.getElementById('phoneDiv');
+        const emailDiv = document.getElementById('emailDiv');
+      
+        contactMethodSelect.addEventListener('change', function () {
+          phoneDiv.style.display = 'none';
+          emailDiv.style.display = 'none';
+      
+          if (this.value === 'phone') {
+            phoneDiv.style.display = 'block';
+          } else if (this.value === 'email') {
+            emailDiv.style.display = 'block';
+          }
+        });
+      
+        // Validate form before submission
+        document.getElementById('details-form').addEventListener('submit', function (event) {
+          const emailInput = document.getElementById('email');
+          const phoneInput = document.getElementById('contact_value');
+          const countrySelect = document.getElementById('country');
+          const termsCheckbox = document.getElementById('terms');
+      
+          if (!contactMethodSelect.value) {
+            alert('Please select a contact method (Email or Phone).');
+            event.preventDefault();
+            return;
+          }
+      
+          if (contactMethodSelect.value === 'email' && !emailInput.value.trim()) {
+            alert('Please enter your email.');
+            event.preventDefault();
+            return;
+          }
+      
+          if (contactMethodSelect.value === 'phone' && !phoneInput.value.trim()) {
+            alert('Please enter your phone number.');
+            event.preventDefault();
+            return;
+          }
+      
+          if (!countrySelect.value) {
+            alert('Please select a country.');
+            event.preventDefault();
+            return;
+          }
+      
+          if (!termsCheckbox.checked) {
+            alert('Please agree to the terms and conditions.');
+            event.preventDefault();
+            return;
+          }
+        });
+      
+        // Show/hide message form based on enquiry type
+        const inquiryTypeSelect = document.getElementById('inquiry_type');
+        const messageForm = document.getElementById('message-form');
+      
+        inquiryTypeSelect.addEventListener('change', function () {
+          if (this.value) {
+            messageForm.style.display = 'block';
+          } else {
+            messageForm.style.display = 'none';
+          }
+        });
+      </script>
+    </div>
+</body>
+
+</html>      
+
+        

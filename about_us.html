@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nez Business Consulting - About Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Styles specific to the About Us page */
+        .content-wrapper {
+            margin-left: 270px; /* Space for the fixed sidebar */
+            padding: 20px;
+        }
+
+        .about-section {
+            padding: 20px;
+            margin-bottom: 30px;
+            background-color: #e0f2f7; /* Light blue background */
+            border-radius: 8px;
+        }
+
+        .about-section h2 {
+            color: #003366; /* Dark blue */
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .about-section p {
+            line-height: 1.7;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .team-section {
+            padding: 20px;
+            margin-bottom: 30px;
+            background-color: #fbe9e7; /* Light red/peach background */
+            border-radius: 8px;
+        }
+
+        .team-section h2 {
+            color: #d32f2f; /* Red */
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .team-member {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .team-member img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+            border: 2px solid #d32f2f;
+        }
+
+        .team-member h3 {
+            color: #0077b6; /* Blue */
+            margin-bottom: 5px;
+        }
+
+        .team-member p.title {
+            color: #777;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .values-section {
+            padding: 20px;
+            margin-bottom: 30px;
+            background-color: #fffde7; /* Light yellow background */
+            border-radius: 8px;
+        }
+
+        .values-section h2 {
+            color: #fbc02d; /* Yellow */
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .values-list {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        .values-list li {
+            display: inline-block;
+            margin: 10px 20px;
+            color: #555;
+            font-weight: bold;
+        }
+
+        .contact-cta {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #0077b6; /* Blue contact background */
+            color: white;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        .contact-cta h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .contact-cta a.contact-button {
+            display: inline-block;
+            background-color: #d32f2f; /* Red contact button */
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-cta a.contact-button:hover {
+            background-color: #b71c1c; /* Darker red on hover */
+        }
+
+        /* Mobile Styles (applied by default) */
+        .team-section .team-member {
+            width: 100%;
+        }
+
+        .values-section .values-list li {
+            display: block;
+            margin: 10px 0;
+        }
+
+        /* Desktop Styles (applied for screens wider than 768px) */
+        @media (min-width: 769px) {
+            .team-section .team-member {
+                width: 30%;
+                display: inline-block;
+                margin-right: 2.35%; /* Creates spacing for a 3-column layout */
+            }
+
+            .team-section .team-member:last-child {
+                margin-right: 0;
+            }
+
+            .values-section .values-list li {
+                display: inline-block;
+                margin: 10px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2 class="mission-statement">Nez Consulting, Professionals with Professional Percept For Insight</h2>
+        <nav class="header-links">
+            <ol>
+                <li><a href="home.html">Home</a></li>
+                <li>|</li>
+                <li><a href="services.html">Services</a></li>
+                <li>|</li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li>|</li>
+                <li><a href="casestudy.html">Case Study</a></li>
+                <li><a href="terms.html">Terms and Conditions</a></li>
+                <li>|</li>
+                <li><a href="contact.html">Contact</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <div class="hamburger-btn" id="hamburger-btn">
+        &#9776;
+    </div>
+
+    <div class="page-container">
+        <aside class="sidebar" id="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="testimonials.html">Testimonials</a></li>
+                    <li><a href="casestudy.html">Case Study</a></li>
+                    <li><a href="articles.html">Articles</a></li>
+                    <li><a href="teamprofiles.html">Team Profiles</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about_us.html" class="active">About our business</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <div class="content-wrapper">
+            <main class="main-content">
+                <section class="about-section">
+                    <h2>Our Story</h2>
+                    <p>Nez Business Consulting was founded on the principle that businesses, regardless of their size or industry, deserve access to insightful and actionable guidance. Established in [Year of Establishment] by a team of seasoned professionals with a shared vision for entrepreneurial empowerment, Nez Consulting has grown from a local initiative to a trusted partner for businesses across [Region/Countries Served].</p>
+                    <p>Our journey began with the recognition of a critical need: bridging the gap between strategic thinking and practical implementation. We saw countless businesses with potential struggling to navigate complex challenges, from developing robust growth strategies to securing essential funding and optimizing their operations. This realization fueled our commitment to provide tailored solutions that address the unique needs of each client.</p>
+                    <p>Over the years, we've had the privilege of working with a diverse range of clients, from ambitious startups to established enterprises, helping them unlock their potential and achieve sustainable success. Our approach is rooted in collaboration, deep industry knowledge, and a relentless focus on delivering tangible results. We believe in building long-term partnerships based on trust, transparency, and a shared commitment to growth.</p>
+                </section>
+
+                <section class="team-section">
+                    <h2>Meet Our Experienced Team</h2>
+                    <div class="team-member">
+                        <img src="images/placeholder_team.jpg" alt="Team Member 1">
+                        <h3>[Team Member 1 Name]</h3>
+                        <p class="title">Founder & CEO</p>
+                        <p>[Brief description of their expertise and experience]</p>
+                        <a href="teamprofiles.html#[team_member_1_id]" class="read-more">Learn More</a>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/tjomazeva.avif" alt="Team Member 2">
+                        <h3>Mr. Tjomazeva Kahaka</h3>
+                        <p class="title">Lead Consultant</p>
+                        <p>[Brief description of their expertise and experience]</p>
+                        <a href="teamprofiles.html#[team_member_2_id]" class="read-more">Learn More</a>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/placeholder_team.jpg" alt="Team Member 3">
+                        <h3>[Team Member 3 Name]</h3>
+                        <p class="title">Strategy Advisor</p>
+                        <p>[Brief description of their expertise and experience]</p>
+                        <a href="teamprofiles.html#[team_member_3_id]" class="read-more">Learn More</a>
+                    </div>
+                    <div style="text-align: center; width: 100%;">
+                        <a href="teamprofiles.html" class="hero-button">View All Team Profiles</a>
+                    </div>
+                </section>
+
+                <section class="values-section">
+                    <h2>Our Core Values</h2>
+                    <ul class="values-list">
+                        <li>Insight</li>
+                        <li>Integrity</li>
+                        <li>Collaboration</li>
+                        <li>Growth</li>
+                        <li>Impact</li>
+                        <li>Client-Centricity</li>
+                    </ul>
+                    <p style="text-align: center; color: #777;">These values guide our every interaction and decision, ensuring we always act in the best interests of our clients.</p>
+                </section>
+
+                <section class="contact-cta">
+                    <h2>Ready to Partner for Growth?</h2>
+                    <p>Let's discuss how Nez Business Consulting can help your business achieve its full potential.</p>
+                    <a href="contact.html" class="contact-button">Contact Us!</a>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script>
+        const hamburgerBtn = document.getElementById("hamburger-btn");
+        const sidebar = document.getElementById("sidebar");
+
+        hamburgerBtn.addEventListener("click", function () {
+            sidebar.classList.toggle("show");
+        });
+
+        // Highlight active link
+        const sidebarLinks = document.querySelectorAll('.sidebar a');
+        sidebarLinks.forEach(link => {
+            if (link.href.includes("about_us")) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>
+           

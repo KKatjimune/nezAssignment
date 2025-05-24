@@ -1,0 +1,219 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Header styling */
+header {
+    background-color: #b3c7d1; /* Light blue color for header */
+    padding: 10px;
+    text-align: center;
+}
+
+/* Mission statement styling */
+.mission-statement {
+    font-size: 24px;
+    margin: 0;
+    color: #003366; /* Dark blue color */
+}
+
+/* Styling for the header links (horizontal list) */
+.header-links ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.header-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.header-links a {
+    color: #003366;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.page-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar styling (default for large screens) */
+.sidebar {
+    background-color: #b3c7d1; /* Light blue color for sidebar */
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding-top: 20px;
+    display: block; /* Always visible on large screens */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for mobile toggle */
+}
+
+/* Hide sidebar on mobile devices by default */
+.sidebar.show {
+    transform: translateX(0);
+}
+
+/* Sidebar links styling */
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 10px 0;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px;
+    color: #003366; /* Dark blue color for sidebar links */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar a:hover,
+.sidebar a:focus {
+    background-color: #003366; /* Dark blue color for hover effect */
+    color: white; /* White text on hover */
+}
+
+/* Active sidebar item */
+.sidebar a.active {
+    background-color: #003366;
+    color: white;
+}
+
+/* Hamburger button (only visible on mobile) */
+.hamburger-btn {
+    display: none; /* Hide by default */
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Content styling */
+.content-wrapper {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 270px; /* Push content to the right to avoid the fixed sidebar */
+}
+
+.main-content {
+    text-align: center;
+}
+
+.main-content img {
+max-width: 100%;/*Make the image scale down to fit its container*/
+height: auto;/*Maintain the image's aspect ratio*/
+display: block;/*Remove any extra space below the image*/
+}
+
+.form-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    margin-left: 270px; /* Pushes content to the right of 250px sidebar + padding */
+    padding: 20px;
+  }
+  
+  .form-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .section-number {
+    width: 30px;
+    height: 30px;
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+.terms-section {
+    margin-left: 260px; /* Slightly more than the sidebar width (250px) */
+    padding: 10px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #b3c7d1; /* Light blue color for footer */
+    text-align: center;
+    margin-top: auto;
+    padding: 10px;
+}
+
+footer p {
+    margin: 0;
+    color: #003366; /* Dark blue color */
+}
+
+/* Media Queries for mobile responsiveness */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        position: absolute;
+        right: -100%; /* Start with sidebar off-screen */
+    }
+
+    /* Show hamburger button on mobile */
+    .hamburger-btn {
+        display: block; /* Only visible on mobile */
+    }
+
+    .content-wrapper {
+        margin-right: 0; /* Allow full width on mobile */
+        padding: 20px;
+    }
+}
+
+/* Large screens adjustments */
+@media (min-width: 1200px) {
+    .content-wrapper {
+        margin: 0 auto; /* Center content with equal white space on large screens */
+        max-width: 1200px;
+    }
+}
+
+.carousel-container {
+    max-width: 900px;
+    height: 300px; /* Adjust as needed */
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 900px;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+}
+
+.carousel-slide img {
+    max-width: 900px;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nez Business Consulting - Articles</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Internal styles specific to this page -->
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .sidebar {
+      background-color: #b3c7d1;
+      width: 250px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      padding-top: 20px;
+      display: block;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .content-wrapper {
+      margin-left: 270px; /* Space for the fixed sidebar */
+      padding: 20px;
+    }
+
+    .main-content {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .main-content h3,
+    .main-content h4 {
+      text-align: center;
+    }
+
+    .main-content p {
+      text-align: left;
+      line-height: 1.6;
+    }
+
+    /* Optional: header and footer quick reset */
+    header, footer {
+      margin-left: 270px;
+      padding: 10px 20px;
+      background-color: #f1f1f1;
+    }
+
+    .header-links ol {
+      list-style: none;
+      display: flex;
+      gap: 10px;
+      padding: 0;
+    }
+
+    .hamburger-btn {
+      display: none; /* Assume desktop view */
+    }
+
+    .photo-container {  
+    display: inline-block;  
+    background: white;  
+    padding: 10px; /* White border around the photo */  
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Depth for floating effect */  
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover transition */  
+  }  
+
+  /* Hover effect: lift and enhance shadow for floating feel */  
+  .photo-container:hover {  
+    transform: translateY(-5px);  
+    box-shadow: 0 12px 24px rgba(0,0,0,0.3);  
+  }  
+
+  .photo-container img {  
+    display: block;  
+    max-width: 100%; /* Responsive size within container */  
+    height: auto; /* Maintain aspect ratio */  
+    /* Set specific size slightly bigger than passport photo */  
+    width: 350px;   
+    height: 450px;  
+  }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h2 class="mission-statement">Nez Consulting, Professionals with Professional Percept For Insight</h2>
+    <nav class="header-links">
+      <ol>
+        <li><a href="#">Home</a></li>
+        <li>|</li>
+        <li><a href="#">Services</a></li>
+        <li>|</li>
+        <li><a href="#">Testimonials</a></li>
+        <li>|</li>
+        <li><a href="#">Case Study</a></li>
+        <li><a href="terms.html">Terms and Conditions</a></li>
+        <li>|</li>
+        <li><a href="contact.html">Contact</a></li>
+      </ol>
+    </nav>
+  </header>
+
+  <!-- Hamburger Button for Mobile -->
+  <div class="hamburger-btn" id="hamburger-btn">
+    &#9776;
+  </div>
+
+  <div class="page-container">
+    <!-- Sidebar Section -->
+    <aside class="sidebar" id="sidebar">
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="casestudy.html">Case Study</a></li>
+          <li><a href="articles.html" class="active">Articles</a></li>
+          <li><a href="teamprofiles.html">Team Profiles</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about_us.html">About our business</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content Section -->
+    <div class="content-wrapper">
+      <main class="main-content">
+        <h3>Featured Articles</h3>
+
+        <!-- Article 1 -->
+        <article>
+          <h4>The Silent Power of Business Intelligence</h4>
+          <div class="photo-container">  
+            <img src="images/alfred.webp" alt="Passport photo" />  
+          </div>            
+          <p><strong>By Mr. Alfred Mogapi</strong></p>
+          <p>
+            In today’s fast-paced business landscape, leveraging data has become more than just an option — it’s a necessity. Business intelligence, when properly harnessed, can unveil trends, anticipate market shifts, and guide strategic decisions that lead to measurable growth. At Nez Consulting, we emphasize developing client-specific dashboards that go beyond metrics to deliver actionable insights. My work with several startups has taught me one truth: intuition may guide, but insight drives results.
+          </p>
+        </article>
+
+        <!-- Article 2 -->
+        <article>
+          <h4>Resilience and Resourcefulness: The DNA of African Entrepreneurs</h4>
+          <div class="photo-container">  
+            <img src="images/tjomazeva.avif" alt="Passport photo" />  
+          </div>            
+          <p><strong>By Mr. Tjomazeva Kahaka</strong></p>
+          <p>
+            Across the continent, I’ve encountered a spirit of innovation fueled by necessity. Entrepreneurs here often build with minimal capital, yet their drive, creativity, and community focus are unmatched. At Nez Consulting, we support these entrepreneurs by formalizing their operations, opening access to funding, and scaling their models sustainably. The challenge isn’t just funding — it’s creating ecosystems of trust and support. Africa's entrepreneurs don’t just survive; they reinvent the rules of engagement.
+          </p>
+        </article>
+
+        <!-- Article 3 -->
+        <article>
+          <h4>Strategic Branding in a Crowded Market</h4>
+          <div class="photo-container">  
+            <img src="images/xae.jpg" alt="Passport photo" />  
+          </div>            
+          <p><strong>By Miss Xae Qhamaya</strong></p>
+          <p>
+            Whether you're launching a tech firm or a boutique store, your brand identity is more than a logo — it’s your story, values, and the emotional signature you leave behind. In my consulting journey, I’ve guided clients to rediscover their voice, design experiences, and spark connections that resonate deeply with their target audience. At Nez, we believe that branding done right doesn’t just attract — it converts and retains. In crowded markets, clarity and authenticity win.
+          </p>
+        </article>
+      </main>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Nez Business Consulting</p>
+  </footer>
+
+  <!-- JavaScript for Sidebar Toggle -->
+  <script>
+    const hamburgerBtn = document.getElementById("hamburger-btn");
+    const sidebar = document.getElementById("sidebar");
+
+    hamburgerBtn.addEventListener("click", function () {
+      sidebar.classList.toggle("show");
+    });
+
+    // Highlight active link
+    const sidebarLinks = document.querySelectorAll('.sidebar a');
+    sidebarLinks.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+      }
+    });
+  </script>
+</body>
+</html>

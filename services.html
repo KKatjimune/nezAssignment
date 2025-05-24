@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nez Business Consulting - Our Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .service {
+            border: 1px solid #ccc;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .service-header {
+            background-color: #0077b6;
+            color: white;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .service-header a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .service-body {
+            display: none;
+            padding: 15px;
+            background-color: #f9f9f9;
+        }
+
+        .sidebar {
+      background-color: #b3c7d1;
+      width: 250px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      padding-top: 20px;
+      display: block;
+      transition: transform 0.3s ease-in-out;
+        }
+
+        @media screen and (min-width: 768px) {
+            .service-body {
+                display: block;
+            }
+        }
+
+        .content-wrapper {
+    margin-left: 270px; /* Space for the fixed sidebar */
+    padding: 20px;
+}
+
+.main-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.main-content h3,
+.main-content h4 {
+    text-align: center;
+}
+
+.main-content p {
+    text-align: left;
+    line-height: 1.6;
+}
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1 style="font-family: 'Times New Roman', Times, serif;">Our Services</h1>
+        <nav class="header-links">
+            <ol>
+                <li><a href="home.html">Home</a></li>
+                <li>|</li>
+                <li><a href="services.html">Services</a></li>
+                <li>|</li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li>|</li>
+                <li><a href="casestudy.html">Case Study</a></li>
+                <li>|</li>
+                <li><a href="terms.html">Terms and Conditions</a></li>
+                <li>|</li>
+                <li><a href="contact.html">Contact</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <!-- Sidebar Section -->
+    <aside class="sidebar" id="sidebar">
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="casestudy.html">Case Study</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="teamprofiles.html">Team Profiles</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about_us.html">About our business</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <div class="content-wrapper">
+        <div class="main-content">
+    <div class="main-content">
+        <div class="carousel-container">
+            <div class="carousel-slide active">
+                <img src="images/Business-Consulting.jpg" alt="Image 1">
+            </div>
+            <div class="carousel-slide">
+                <img src="images/business-consultancy-services-500x500.webp" alt="Image 2">
+            </div>
+            <div class="carousel-slide">
+                <img src="images/consultancy.jpeg" alt="Image 3">
+            </div>
+        </div>
+        <p class="intro-text">
+            <h2>Discover the <span style="color: darkblue;">range of expert services we offer</span> to empower your business growth. Click on any service below for more details or to reach out to us.</h2>
+        </p>
+
+        <img src="images/business-counsultancy-services.jpg" alt="">
+        <div class="services-list">
+            <div class="service">
+                <div class="service-header"><a id="business-strategy-consulting-link" href="contact.html">Business Strategy Consulting</a></div>
+                <div class="service-body">
+                    We help businesses define their vision, set achievable goals, and execute long-term strategies that foster growth and competitive advantage.
+                    <br><strong>Price:</strong> P5000 per session
+                </div>
+            </div>
+
+            <img src="images/scott-graham-5fNmWej4tAA-unsplash.jpg" alt="">
+            <div class="service">
+                <div class="service-header"><a href="contact.html">Startup Development Assistance</a></div>
+                <div class="service-body">
+                    Guidance for emerging entrepreneurs from ideation to market entry, including business model development, pitch deck creation, and legal structuring.
+                    <br><strong>Price:</strong> P7500 per project phase
+                </div>
+            </div>
+
+            <img src="images/BRAND-MARKETING.webp" alt="">
+            <div class="service">
+                <div class="service-header"><a href="contact.html">Marketing and Branding</a></div>
+                <div class="service-body">
+                    Crafting strong brand identities and implementing multi-channel marketing strategies to boost visibility and engagement.
+                    <br><strong>Price:</strong> P4000 for brand package | $300/month for marketing support
+                </div>
+            </div>
+
+            <img src="images/consultancy.jpeg" alt="Image 3">
+            <div class="service">
+                <div class="service-header"><a href="contact.html">Financial Planning and Analysis</a></div>
+                <div class="service-body">
+                    We analyze cash flow, reduce costs, and build financial models that support sustainable growth and funding readiness.
+                    <br><strong>Price:</strong> P600 per analysis | P100/hour for ongoing support
+                </div>
+            </div>
+
+            <img src="images/team.jpg" alt="">
+            <div class="service">
+                <div class="service-header"><a href="contact.html">HR and Team Development</a></div>
+                <div class="service-body">
+                    We assist with recruitment strategy, team building, performance management, and leadership training.
+                    <br><strong>Price:</strong> P4500 per module
+                </div>
+            </div>
+
+            <img src="images/Digital-transformation.png" alt="">
+            <div class="service">
+                <div class="service-header"><a href="contact.html">Digital Transformation & Tech Integration</a></div>
+                <div class="service-body">
+                    Helping companies integrate digital tools and automate workflows to enhance efficiency and competitiveness.
+                    <br><strong>Price:</strong> Starts at P8000 depending on scope
+                </div>
+            </div>
+
+            <img src="images/Man-speaking-to-conference.jpg" alt="">
+            <div class="service">
+                <div class="service-header"><a href="contact.html">Workshops & Seminars</a></div>
+                <div class="service-body">
+                    Tailored training sessions for entrepreneurs and business teams on topics like innovation, leadership, and business operations.
+                    <br><strong>Price:</strong> P2000 per attendee (group discounts available)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Enable collapsible sections on smaller screens
+        const headers = document.querySelectorAll('.service-header');
+
+        headers.forEach(header => {
+            header.addEventListener('click', () => {
+                const body = header.nextElementSibling;
+
+                // Only toggle in mobile view
+                if (window.innerWidth < 768) {
+                    body.style.display = (body.style.display === 'block') ? 'none' : 'block';
+                }
+            });
+        });
+    </script>
+    <script>
+        const hamburgerBtn = document.getElementById("hamburger-btn");
+        const sidebar = document.getElementById("sidebar");
+    
+        hamburgerBtn.addEventListener("click", function () {
+          sidebar.classList.toggle("show");
+        });
+    
+        // Highlight active link
+        const sidebarLinks = document.querySelectorAll('.sidebar a');
+        sidebarLinks.forEach(link => {
+          if (link.href === window.location.href) {
+            link.classList.add('active');
+          }
+        });
+    </script>
+    <script>
+        const slides = document.querySelectorAll('.carousel-slide');
+        let currentIndex = 0;
+        const intervalTime = 3000; // Time in milliseconds between slides
+
+        function showSlide(index) {
+            slides.forEach((slide) => slide.classList.remove('active'));
+            slides[index].classList.add('active');
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        // Start the automatic sliding
+        setInterval(nextSlide, intervalTime);
+    </script>
+</body>
+</html>
